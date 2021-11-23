@@ -7,6 +7,26 @@ We want to know
 1. All of the prizes that were won for a given distribution.
 2. The maximum prize payout for the given distribution given max picks.
 
+# Quick Start
+
+Fork this repo then run the commands:
+
+```
+nvm use
+```
+
+```
+yarn
+```
+
+```
+yarn build
+```
+
+```
+yarn cli
+```
+
 ## Commands
 
 TSDX scaffolds your new library inside `/src`.
