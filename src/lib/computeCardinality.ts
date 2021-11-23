@@ -6,8 +6,6 @@ export function computeCardinality(
     totalSupplyDecimals: number = 18
 ): number {
     const range = 2**bitRangeSize
-    
-    console.log(`rrraaaangge `, bitRangeSize)
 
     let matchCardinality = 2
 

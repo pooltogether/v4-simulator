@@ -3,6 +3,7 @@ import { ethers } from 'ethers'
 import { Command } from 'commander';
 import { prizes } from './commands/prizes';
 import { metrics } from './commands/metrics';
+import { prizeCounts } from './commands/prize-counts';
 
 const program = new Command()
 
@@ -20,5 +21,12 @@ program
   .command('metrics [prizesOutput]')
   .action(metrics)
 
+program
+  .command('counts')
+  .option('-br, --bit-range [number]', 'number of bits', '3')
+  .option('-c, --cardinality [number]', 'cardinality', '5')
+  .option('-i, --iterations [number]', 'number of simulations to run', '1')
+  .action(prizeCounts)
+  
 program.showHelpAfterError()
 program.parse(process.argv)
