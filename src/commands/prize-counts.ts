@@ -54,7 +54,7 @@ function prizeCounts(options: any) {
 
     console.log(chalk.dim(`Using bit range of ${bitRange}`))
     console.log(chalk.dim(`Using cardinality of ${cardinality}`))
-    console.log(chalk.dim(`Using iterations of ${space}`))
+    console.log(chalk.dim(`Using iterations of ${iterations}`))
     console.log(chalk.dim(`Total computed probability space: ${odds}`))
     
     computeProjected(cardinality, range)
