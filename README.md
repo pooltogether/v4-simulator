@@ -24,7 +24,7 @@ yarn build
 ```
 
 ```
-yarn cli
+yarn cli -h
 ```
 
 ## Commands
