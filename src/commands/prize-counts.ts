@@ -7,7 +7,7 @@ function computeProjected(cardinality: number, range: number) {
     if (i > 0) {
       exactMatches -= range**(i-1);
     }
-    console.log(chalk.cyan(`Estimated matching ${cardinality - i}: ${exactMatches}`))
+    console.log(chalk.cyan(`Estimated count per iteration of prize ${cardinality - i}: ${exactMatches}`))
     counts.push(exactMatches)
   }
   return counts
